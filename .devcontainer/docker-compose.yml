@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  lib:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    entrypoint: ["tail", "-f", "/dev/null"]
+    volumes:
+      - ..:/workspace

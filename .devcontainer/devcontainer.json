@@ -1,0 +1,33 @@
+{
+    "name": "yolov4_darknet_wrapper",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/workspace",
+    "service": "lib",
+    "settings": {
+      "python.linting.pylintEnabled": false,
+      "python.linting.flake8Enabled": true,
+      "python.linting.flake8Args": ["--max-line-length=88"],
+      "python.linting.mypyEnabled": true,
+      "python.formatting.provider": "black",
+      "python.sortImports.args": ["--profile", "black"],
+      "python.analysis.autoImportCompletions": false,
+      "[python]": {
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        }
+      }
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "eamodio.gitlens",
+      "angular.ng-template",
+      "esbenp.prettier-vscode",
+      "humao.rest-client",
+      "njpwerner.autodocstring"
+    ],
+    "remoteUser": "root",
+    "remoteEnv": {
+      "PYTHONPATH": "/workspace/src"
+    }
+  }
